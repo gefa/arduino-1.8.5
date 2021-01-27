@@ -15,7 +15,7 @@ void setup() {
 
 void loop() {
   // try to parse packet
-  int packetSize = LoRa.parsePacket(1);// 1 for implicit
+  int packetSize = LoRa.parsePacket(0);// 1 for implicit
   if (packetSize) {
     // received a packet
     Serial.print("Received packet '");
